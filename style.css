@@ -1,0 +1,528 @@
+/* Main Styles */
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+}
+
+nav {
+    display: block;
+}
+
+main {
+    padding: 0px;
+    width: 100%;
+}
+
+section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+
+
+/* Class Specific Styles */
+
+.header-nav {
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 16px;
+    border-bottom: 2px solid black;
+}
+
+.header-div {
+    padding: 8px 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.logo-div {
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.logo-div a {
+    text-decoration: none;
+}
+
+.nav-menu-container {
+    display: none;
+}
+
+.nav-menu-bar {
+    position: relative;
+}
+
+.menu-item-div {
+    font-size: 18px;
+    display: none;
+}
+
+.menu-item-div a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+    .logo-div{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 816px){
+    .menu-item-div {
+        display: initial;
+    }
+}
+
+@media (max-width: 816px){
+    .nav-menu-container {
+        display: initial;
+        z-index: 1;
+    }
+}
+
+/* Hero Section */
+
+.wrapper {
+    width: 100%;
+}
+
+.home-main {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-container {
+    padding: 50px 15px;
+    background: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.hero-inner-content {
+    max-width: 700px;
+    width: 100%;
+}
+
+.hero-inner-h2 {
+    font-size: 33px;
+    margin: auto;
+}
+
+h2 {
+    color: inherit;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 1.627rem;
+    line-height: 1.1;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.hero-inner-para {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.hero-inner-links-container {
+    display: flex;
+}
+
+.work-link {
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: white;
+    padding: 11px 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.contact-link {
+    border: 2px solid black;
+    border-radius: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 15px;
+}
+
+.work-link:hover,
+.contact-link:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(51,51,51);
+    font-weight: 600;
+    transition: color 0.2s ease 0s;
+}
+
+a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px){
+    .hero-container {
+        padding: 100px 15px;
+    }
+    .hero-inner-h2 {
+        font-size: 55px;
+        display: initial;
+    }
+    .hero-inner-para {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px 0;
+        font-size: 23px;
+    }
+}
+
+/* What I do Section  */
+
+.skills-container {
+    width: 100%;
+    border-top: 2px solid;
+    padding: 35px;
+    scroll-margin-top: 60px;
+}
+
+.skills-h2-heading {
+    font-size: 33px;
+    text-align: center;
+    margin: auto;
+    max-width: 725px;
+}
+
+.skills-content {
+    margin: 25px auto;
+    max-width: 1000px;
+}
+
+.skills-content-inner {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-content-inner-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    max-width: 500px;
+}
+
+.skills-content-inner-image {
+    max-width: 125px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.skills-content-inner-div {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.skills-content-inner-h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.skills-content-inner-p {
+    font-size: 20px;
+}
+
+.learn-more-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.learn-more-h2 {
+    max-width: 500px;
+    font-size: 30px;
+}
+
+.learn-more-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resume-link {
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.blog-link {
+    border: 2px solid black;
+    border-radius: 0;
+    background-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 15px
+}
+
+.resume-link:hover,
+.blog-link:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px){
+    .skills-container {
+        padding: 50px 0 100px;
+    }
+    .skills-h2-heading {
+        font-size: 40px;
+    }
+    .skills-content {
+        margin: 75px auto 50px;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 1.5rem;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer__link {
+    font-weight: 1000;
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0 0;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+}
+
+.social-list__link {
+    padding: .5em;
+}
+
+/* Contact Me Page Styles*/
+
+.contact-container {
+    background-color: antiquewhite;
+    padding: 50px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-copy {
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: inherit;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    font-size: 3.25rem;
+    line-height: 1.1;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 20px;
+}
+
+.contact-form-container {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    max-width: 600px;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact-form-container form label {
+    font-weight: 600;
+}
+
+.contact-form-container form input {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.contact-form-container * + * {
+    margin: 15px 0 0;
+}
+
+label {
+    cursor: default;
+}
+
+input, textarea, button {
+    font: inherit;
+}
+
+input {
+    border-radius: 0;
+    margin: 0;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    display: inline-block;
+    cursor: text;
+    text-align: start;
+}
+
+.contact-form-container textarea {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+textarea {
+    margin: 0;
+    padding: 2px;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: text;
+    text-align: start;
+    resize: auto;
+}
+
+textarea:focus, input:focus{
+    outline: 1px solid black;
+}
+
+.contact-form-container button {
+    width: 150px;
+    color: black;
+    font-weight: 600;
+}
+
+.submit-button {
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px 15px 5px 0;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: white;
+}
