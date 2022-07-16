@@ -75,6 +75,22 @@ div {
     position: relative;
 }
 
+.nav-menu-bar button {
+    z-index: 10;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background: white;
+    font: inherit;
+}
+
+.nav-menu-bar button:hover {
+    background: white;
+}
+
 .menu-item-div {
     font-size: 18px;
     display: none;
